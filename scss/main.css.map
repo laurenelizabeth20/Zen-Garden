@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,MAAM,EAAC,CAAE;EACT,OAAO,EAAC,CAAC;CACR",
-    "sources": [
-        "main.scss"
-    ],
-    "names": [],
-    "file": "main.css"
-}
+{"version":3,"sourceRoot":"","sources":["typography.scss","main.scss"],"names":[],"mappings":"AAAQ;ACEA;AAER;EACI;EACA;;;AAGJ;EACI;;;AAGJ;EACI,aDXa;;;ACcjB;EACI;EACA;;;AAGJ;EACI,aDrBW;ECsBX;;;AAGJ;EACI;EACA;EACA;;;AAGJ;EACI;;;AAGJ;EACI;EACA;EACA;EACA;;AACA;EACI;;AAEJ;EACI;;;AAIR;EACI;EACA;EACA","file":"main.css"}

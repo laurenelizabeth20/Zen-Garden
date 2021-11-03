@@ -1,5 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:wght@300&display=swap");
 body {
-  margin: 0;
+  margin: 20px;
   padding: 0;
 }
+
+header, .summary, .select {
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: "Bebas Neue", cursive;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 150px;
+}
+
+p, a {
+  font-family: "Merriweather", serif;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 50px;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5px;
+}
+nav ul li:nth-child(odd) {
+  grid-column: 1;
+}
+nav ul li:nth-child(even) {
+  grid-column: 2;
+}
+
+.archives {
+  visibility: hidden;
+  margin: 0px;
+  height: 0px;
+}
+
 /*# sourceMappingURL=main.css.map */
