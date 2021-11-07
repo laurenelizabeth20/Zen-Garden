@@ -5,11 +5,15 @@ body {
   padding: 0;
 }
 
-header, .summary, .select {
+header,
+.summary,
+.select {
   text-align: center;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Bebas Neue", cursive;
 }
 
@@ -18,7 +22,8 @@ h1 {
   line-height: 150px;
 }
 
-p, a {
+p,
+a {
   font-family: "Merriweather", serif;
   text-decoration: none;
 }
@@ -50,6 +55,56 @@ nav ul li:nth-child(even) {
   visibility: hidden;
   margin: 0px;
   height: 0px;
+}
+
+@media only screen and (min-width: 60em) {
+  .design-selection {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    padding: 25px;
+    background: lightgray;
+  }
+
+  .next {
+    position: fixed;
+    top: 450px;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    padding: 25px;
+  }
+
+  .viewall {
+    position: fixed;
+    top: 475px;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    padding: 25px;
+  }
+
+  body {
+    margin-left: 350px;
+    margin-right: 10%;
+    max-width: 80%;
+  }
+
+  header,
+.summary,
+.select {
+    text-align: left;
+  }
+
+  .summary {
+    margin-bottom: 100px;
+  }
+
+  li {
+    display: inline;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
