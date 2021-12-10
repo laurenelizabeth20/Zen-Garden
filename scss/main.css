@@ -6,6 +6,21 @@ body {
 }
 
 header,
+.zen-resources {
+  background-image: url(../images/forest.jpg);
+  background-size: cover;
+  background-position: center 20%;
+  color: #F5FBEF;
+}
+
+header a,
+header h3,
+.zen-resources a,
+.zen-resources h3 {
+  color: #F5FBEF;
+}
+
+header,
 .summary,
 .select {
   text-align: center;
@@ -36,18 +51,25 @@ h2 {
 
 h3 {
   font-size: 25px;
+  color: #314909;
 }
 
 nav ul {
   list-style-type: none;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: auto auto;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
   gap: 5px;
 }
+
 nav ul li:nth-child(odd) {
+  -ms-grid-column: 1;
   grid-column: 1;
 }
+
 nav ul li:nth-child(even) {
+  -ms-grid-column: 2;
   grid-column: 2;
 }
 
@@ -67,7 +89,6 @@ nav ul li:nth-child(even) {
     padding: 25px;
     background: lightgray;
   }
-
   .next {
     position: fixed;
     top: 450px;
@@ -76,7 +97,6 @@ nav ul li:nth-child(even) {
     height: 100%;
     padding: 25px;
   }
-
   .viewall {
     position: fixed;
     top: 475px;
@@ -85,26 +105,21 @@ nav ul li:nth-child(even) {
     height: 100%;
     padding: 25px;
   }
-
   body {
     margin-left: 350px;
     margin-right: 10%;
     max-width: 80%;
   }
-
   header,
-.summary,
-.select {
+  .summary,
+  .select {
     text-align: left;
   }
-
   .summary {
     margin-bottom: 100px;
   }
-
   li {
     display: inline;
   }
 }
-
 /*# sourceMappingURL=main.css.map */

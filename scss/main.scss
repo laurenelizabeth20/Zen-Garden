@@ -8,6 +8,19 @@ body {
 }
 
 header,
+.zen-resources{
+  background-image: url(../images/forest.jpg);
+  background-size: cover;
+  background-position: center 20%;
+  color: $ivory;
+  a,
+  h3 {
+    color: $ivory;
+  }
+
+}
+
+header,
 .summary,
 .select {
   text-align: center;
@@ -16,8 +29,9 @@ header,
 h1,
 h2,
 h3 {
-  font-family: $secondary-font;
+  font-family: $secondary-font;  
 }
+
 
 h1 {
   font-size: 40px;
@@ -38,6 +52,7 @@ h2 {
 
 h3 {
   font-size: 25px;
+  color:$lighter-green;
 }
 
 nav ul {
