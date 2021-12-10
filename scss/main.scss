@@ -5,6 +5,7 @@
 body {
   margin: 20px;
   padding: 0;
+  background-color: $ivory;
 }
 
 header,
@@ -13,14 +14,15 @@ header,
   text-align: center;
 }
 
-h1,
 h2,
 h3 {
   font-family: $secondary-font;
+  color: $lighter-green;
 }
 
 h1 {
   font-size: 40px;
+  font-family: $secondary-font;
   line-height: 150px;
 }
 
@@ -28,6 +30,7 @@ p,
 a {
   font-family: $primary-font;
   text-decoration: none;
+  color: $black;
 }
 
 h2 {
@@ -64,12 +67,36 @@ nav ul {
     position: fixed;
     top: 0;
     left: 0;
-    width: 250px;
+    width: 25px;
     height: 100%;
     padding: 25px;
-    background: lightgray;
+    background: $dark-green;
+    overflow:hidden;
+    a, li, h3 {
+      display: none;
+    }
   }
 
+  .design-selection:hover, .design-archives:hover {
+    width: 250px;
+    overflow: hidden;
+    color: $ivory;
+    position: absolute; // Makes it so the 'open' and 'menu' are absolute
+    top: 0; // aligns it to the top
+    left: 0; // aligns it to the bottom
+    transition: all 0.5s ease; 
+    a, li, h3 {
+      display: initial;
+      color: $ivory;
+      text-decoration: none;
+    }
+  }
+
+  .design-archives a {
+    display: initial;
+    color: $ivory;
+    padding-left: 55px;
+  }
   .next {
     position: fixed;
     top: 450px;
