@@ -97,10 +97,10 @@ nav ul {
     width: 250px;
     overflow: hidden;
     color: $ivory;
-    position: absolute; // Makes it so the 'open' and 'menu' are absolute
-    top: 0; // aligns it to the top
-    left: 0; // aligns it to the bottom
+    top: 0;
+    left: 0;
     transition: all 0.5s ease; 
+    height: 100%;
     a, li, h3 {
       display: initial;
       color: $ivory;

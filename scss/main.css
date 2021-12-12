@@ -102,11 +102,11 @@ nav ul li:nth-child(even) {
     width: 250px;
     overflow: hidden;
     color: #F5FBEF;
-    position: absolute;
     top: 0;
     left: 0;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    height: 100%;
   }
   .design-selection:hover a, .design-selection:hover li, .design-selection:hover h3, .design-archives:hover a, .design-archives:hover li, .design-archives:hover h3 {
     display: initial;
