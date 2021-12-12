@@ -11,7 +11,9 @@ header,
   background-image: url(../images/forest.jpg);
   background-size: cover;
   background-position: center 20%;
+  padding: 30px;
   color: #F5FBEF;
+  border-radius: 5px;
 }
 
 header a,
@@ -21,6 +23,40 @@ header h2,
 .zen-resources h3,
 .zen-resources h2 {
   color: #F5FBEF;
+}
+
+.zen-resources {
+  --border-width: 5px;
+  position: relative;
+  border-radius: var(--border-width);
+}
+
+.zen-resources::after {
+  position: absolute;
+  content: "";
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  z-index: -1;
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  background: linear-gradient(60deg, #000000, #20331E, #314909, yellow, #6FCE72, #F5FBEF, #FFFFFF);
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * var(--border-width));
+  -webkit-animation: moveGradient 4s alternate infinite;
+          animation: moveGradient 4s alternate infinite;
+}
+
+@-webkit-keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 header,
